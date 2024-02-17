@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    /* background-color: red; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prfole-card{
+    height: 450px;
+    width: 400px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: relative;
+}
+
+.color-box{
+    width: 100%;
+    height: 200px;
+    background-color: #456fe7;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    /* position: relative; */
+    /* display: flex;
+    justify-content: center; */
+}
+.color-box img{
+    border : 3px solid white;
+    width: 130px;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    border-radius: 50%;
+}
+
+.desc-box{
+    /* padding-top: 30px; */
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(212, 212, 64); */
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.desc{
+    margin-top: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.desc .name{
+    font-size: 1.5rem;
+}
+.desc .passion{
+    margin-top: 8px;
+    font-size: 0.90rem;
+    color: gray;
+}
+
+.social-icon-container{
+    width: 65%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icon-container div{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.85rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+}
+
+.btn-container button{
+    background-color: #456fe7;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.stats-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.stats-container div{
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    color: rgb(40, 40, 40);
+
+}
+
+.stats-container div p{
+    margin-left: 5px;
+}
+
+.middle-stat{
+    border-left: 2px solid rgba(65, 65, 65, 0.393);
+    border-right: 2px solid rgba(65, 65, 65, 0.393);
+}

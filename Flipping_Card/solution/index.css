@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins" ;
+    color: white;
+}
+
+section{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #121321;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section::before{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(-150px, -100px);
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+}
+
+section::after{
+    content: "";
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-radius: 50%;
+    transform: translate(150px, 100px);
+    background: linear-gradient(90deg, #9c27b0, #f3f5f5);
+}
+
+.container{
+    width: 395px;
+    height: 225px;
+    z-index: 100;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+.container:hover{
+    transform: rotateY(180deg);
+}
+
+
+
+.container .card{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    backface-visibility: hidden;
+}
+
+
+.front-face .header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.front-face .mastercard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front-face .mastercard img{
+    height: 30px;
+}
+
+.front-face .mastercard p{
+    margin-left: 10px;
+}
+
+.front-face .chip{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.front-face .chip img{
+    height: 30px;
+}
+
+.front-face .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.front-face .details .card-number{
+    font-size: 0.65rem;
+}
+.front-face .details .number{
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+.front-face .details  .name{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-top: 27px;
+    font-weight: 400 ;
+}
+
+.back-face{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    transform: rotateY(180deg);
+}
+
+.back-face .top h6{
+    font-size: 0.55rem;
+    font-weight: 300;
+    margin-top: 10px;
+    text-align: center;
+}
+.back-face .black-tape{
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    right: 0px;
+}
+.back-face .low {
+    margin-bottom: 20px;
+}
+.back-face .low .white-tape{
+    height: 40px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 8px;
+    background: repeating-linear-gradient(
+        #fff,
+        #fff 3px,
+        #efefef 0px,
+        #efefef 9px
+      );
+}
+.back-face .low .white-tape .cvv{
+    color: black;
+    background-color: white;
+    margin-right: -30px;
+    padding: 2px;
+    font-size: 0.75rem;
+    width: 30px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-style: italic;
+}
+.back-face .low .info p{
+    font-size: 0.55rem;
+    margin-top: 15px;
+    
+}

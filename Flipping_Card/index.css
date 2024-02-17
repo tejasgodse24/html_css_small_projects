@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #121220;
+}
+
+.card-box{
+    width: 800px;
+    height: 560px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card-box .col1{
+    height: 560px;
+    width: 350px;
+    /* background-color: black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card-box  .pink1{
+    width: 350px;
+    height: 350px;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    background: rgb(242,213,255);
+    background: linear-gradient(19deg, rgba(242,213,255,1) 21%, rgba(192,55,255,1) 74%);
+}
+
+
+.card-box .col2{
+    height: 560px;
+    width: 350px;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+.card-box .pink2{
+    width: 350px;
+    height: 350px;
+    background-color: yellow;
+    border-radius: 50%;
+    background: rgb(242,213,255);
+    background: linear-gradient(19deg, rgba(242,213,255,1) 21%, rgba(192,55,255,1) 74%);
+}
+
+.card{
+    width: 450px;
+    height: 300px;
+    background-color: rgba(128, 128, 128, 0.498);
+    position: absolute;
+    left: 150px;
+    top: 130px;
+    border-radius: 35px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    padding: 0px 20px;
+    transition: all 0.7s ease-in-out 0s;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+
+}
+.card  .card-col1{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.card  .card-col1 .top{
+    display: flex;
+}
+.card  .card-col1 img{
+    height: 45px;
+}
+.card  .card-col1 p{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+
+.card  .card-col2{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.card  .card-col2 img{
+    height: 45px;
+    margin-top: 40px;
+}
+
+.card  .card-col2 .valid{
+    margin-bottom: 40px;
+}
